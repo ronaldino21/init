@@ -1,0 +1,38 @@
+{% extends "layout.html" %} {% block title %} Login {% endblock %} {% block content %}
+
+<html data-bs-theme="dark">
+    <link rel="stylesheet" href="../static/css/login.css">
+
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <form class="form" action="/users/login" method="POST">
+            <div class="form-title"><span>sign in to your</span></div>
+            <div class="title-2"><span>SPACE</span></div>
+            <div class="input-container">
+                <input class="input-mail" type="text" name="username" placeholder="Username">
+                <span> </span>
+            </div>
+
+            <section class="bg-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </section>
+
+            <div class="input-container">
+                <input class="input-pwd" type="password" name="password" placeholder="Enter password">
+            </div>
+            <button type="submit" class="submit">
+                <span class="sign-text">Sign in</span>
+            </button>
+
+            {% if error_message %}
+                <p class="text-danger mt-3 text-center">{{ error_message }}</p>
+            {% endif %}
+        
+        </form>
+    </div>
+    
+</html>
+
+{% endblock %}

@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    align-items: center;
+    padding-top: 15px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+.logos {
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+
+#loader {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px -40px;
+  z-index: 1000;
+}
+
+.sections a {
+    color: #ffffff;
+    transition: color 0.5s;
+}
+.sections a:hover {
+    color: #3bc9db;
+}
+
+.item {
+    padding: 10px;
+    width: 100%;
+    background-color: #1a1a1a;
+    transition: color 0.5s;
+}
+
+.item:hover {
+    background-color: #4f4f4f;
+    border-radius: 4px;
+}
+
+.green {
+    color: #0CFD95;
+}
+
+.bx-log-out {
+  color: #ff8787;
+}
+
+/* centrar divcards con flexbox */
+.divcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.lava-lamp {
+  position: relative;
+  width: 50px;
+  height: 100px;
+  background: #000;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #e64980, #ff8787);
+  border-radius: 50%;
+  left: 15px;
+  animation: drop 5s ease-in-out infinite;
+}
+.bubble1 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #82c91e, #3bc9db);
+  border-radius: 50%;
+  left: 1px;
+  animation: drop 3s ease-in-out infinite;
+}
+.bubble2 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #7950f2, #f783ac);
+  border-radius: 50%;
+  left: 30px;
+  animation: drop 4s ease-in-out infinite;
+}
+.bubble3 {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to bottom, #4481eb, #04befe);
+  border-radius: 50%;
+  left: 20px;
+  animation: drop 6s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px; /* Adjust the width for mobile devices */
+    }
+
+    .logos {
+        font-size: 1rem; /* Adjust the font size for mobile devices */
+    }
+
+    .logo {
+        font-size: 2rem; /* Adjust the font size for mobile devices */
+    }
+}

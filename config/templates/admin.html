@@ -1,0 +1,57 @@
+{% extends "layout.html" %} {% block title %} Trunkated {% endblock %} {% block content %}
+<html data-bs-theme="dark">
+ <body>
+    <aside class="sidebar">
+        <div class="lava-lamp" style="margin-bottom: 1.5rem; margin-top: 1.5rem;">
+            <div class="bubble"></div>
+            <div class="bubble1"></div>
+            <div class="bubble2"></div>
+            <div class="bubble3"></div>
+        </div>
+        <div class="sections align-items-center">
+            <div class="item mb-5 mt-5" id="card-button">
+                <a href="" class="text-decoration-none"><i class='bx bx-credit-card-front logos'></i></a>
+            </div>
+            <div class="item mb-5" id="trico-button">
+                <a href="" class="text-decoration-none"><i class='bx bxs-bank logos'></i></a>
+            </div>
+            <div class="item mb-5" id="ps-button">
+                <a href="" class="text-decoration-none"><i class='bx bx-wallet-alt logos' ></i></a>
+            </div>
+            <div class="item mb-5" id="neq-button">
+                <a href="" class="text-decoration-none"><i class='bx bx-credit-card-alt logos'></i></a>
+            </div>
+            <div class="item mb-5">
+                <a href="/users/logout" class="text-decoration-none"><i class='bx bx-log-out logos' ></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="container d-flex justify-content-center align-items-center mt-3">
+        <h3 id="title-content" class="" style="color: #3bc9db;"></h3>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center mt-3">
+        <div class="" id="on-dataTables"></div>
+    </div>
+
+    <div class="divcards" id="container-logos">
+        <div class="" id="div-dataTables">
+            
+        </div>
+    </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+ <script src="{{ url_for('static', filename='js/jquery-3.7.1.min.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/ondatatable.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/onneqdata.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/onpsdata.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/ontricodata.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/putstatus.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/load-data.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/card-button.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/trico-button.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/ps-button.js') }}"></script>
+ <script src="{{ url_for('static', filename='js/neq-button.js') }}"></script>
+ </body>
+</html>
+{% endblock %}
