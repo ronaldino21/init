@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 TK = 'writtenby'
 
-app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://bebedb_s2zt_user:OQKy9W2LHW5hrjZ47OW2Kz8d9jerIRFb@dpg-ctu51erv2p9s738ovetg-a/bebedb_s2zt'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://yodb_user:Ajz4xWIL33hfbinqCrLRkUBCTqMbBpgy@dpg-cu1f3i5svqrc73es45b0-a/yodb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 app.secret_key = 'ltPanel'
