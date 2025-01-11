@@ -15,7 +15,7 @@ app.register_blueprint(events_routes, url_prefix='/events')
 app.register_blueprint(trico_routes, url_prefix='/trico')
 
 
-TK = 'palma'
+TK = 'initr'
 
 def token_required(f):
     @wraps(f)
